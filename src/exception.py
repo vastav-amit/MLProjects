@@ -2,8 +2,8 @@
 #createed a function how the message will look like, and created custome exception which will going to print the error message
 # sys- provides direct access to input and output streams, namely stdin, stdout, and stderr.
 import sys
-import logging
-import logger
+from src.logger import logging
+
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb,=error_detail.exc_info()
     file_name = exc_tb.tb_frame.f_code.co_filename
